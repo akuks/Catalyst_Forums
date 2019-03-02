@@ -1,0 +1,21 @@
+<strong> Hello, I am from Hello Controller </strong>
+<hr>
+[% first_variable %]
+<hr>
+
+[% FOR a IN array %]
+    <li>[% a %]</li>
+[% END %]
+
+<hr>
+
+[% FOR h_keys IN hash.keys %]
+    <li>[% h_keys %] => [% hash.$h_keys %]</li>
+[% END %]
+
+
+<hr>
+
+[% FOR p IN aoh %]
+    <li>[% p.first_name %] => [% p.last_name %] => [% p.age %] => [% p.country %]</li>
+[% END %]
